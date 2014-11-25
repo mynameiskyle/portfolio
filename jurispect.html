@@ -7,18 +7,7 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
   <link href="css/bootstrap.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" href="css/styles.css">
-  <script>
-    $(document).ready (function () {
- $(window).scroll (function () {
-    var sT = $(this).scrollTop();
-        if (sT >= 300) {
-            $('.overlay').addClass('cambio')
-        }else {
-            $('.overlay').removeClass('cambio')
-        }
-  })
-})
-  </script>
+
 </head>
 <body>
   <nav data-scroll-header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -50,7 +39,7 @@
   <div class="details">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-7">
           <h2>Jurispect</h2>
           <div class="page-skills"><p>Branding, Visuals, UI, UX</p></div>
           <p>Jurispect allows legal teams to manage their legal risk.</p>
@@ -62,10 +51,12 @@
   <div class="work">
     <div class="container">
       <div class="row">
-        <img src="img/logo-jurispect.png" class="img-responsive">
+        <div class="col-md-12">
+          <img src="img/logo-jurispect.png" class="img-responsive">
         <img src="img/jurispect-home.jpg" class="img-responsive">
         <img src="img/jurispect-dash.jpg" class="img-responsive">
         <img src="img/jurispect-rule.jpg" class="img-responsive">
+        </div>
       </div>
     </div>
   </div>
@@ -102,12 +93,6 @@
       <script src="js/smooth-scroll.js"></script>  
       <script>
       smoothScroll.init();
-      </script>
-      <script src='js/scrollReveal.js'></script>
-      <script>
-
-      window.scrollReveal = new scrollReveal();
-
       </script>
       <!-- END JAVASCRIPTS -->
 

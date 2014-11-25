@@ -7,18 +7,7 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
   <link href="css/bootstrap.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" href="css/styles.css">
-  <script>
-    $(document).ready (function () {
- $(window).scroll (function () {
-    var sT = $(this).scrollTop();
-        if (sT >= 300) {
-            $('.overlay').addClass('cambio')
-        }else {
-            $('.overlay').removeClass('cambio')
-        }
-  })
-})
-  </script>
+
 </head>
 <body>
   <nav data-scroll-header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -50,7 +39,7 @@
   <div class="details">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-7">
           <h2>accountingfly</h2>
           <div class="page-skills"><p>Branding,Visuals, HTML, CSS</p></div>
           <p>The purpose of accountingfly was to provide real value to our users in the form of weekly job posting emails, but also spend as little money and as little time writing code as possible. Using wufoo, mailchimp and chargify, we were able to create a job board that delivered real jobs, to qualified candidates every week and allowed the employers to post, pay and be charged once a month.</p>
@@ -63,10 +52,12 @@
  <div class="work">
    <div class="container">
      <div class="row">
-       <img src="img/af-logo.png" class="img-responsive">
+       <div class="col-md-12">
+         <img src="img/af-logo.png" class="img-responsive">
         <img src="img/accountingfly-home.jpg" class="img-responsive">
         <img src="img/af-post.jpg" class="img-responsive">
         <img src="img/af-email.jpg" class="img-responsive">
+       </div>
      </div>
    </div>
  </div>
@@ -103,12 +94,6 @@
       <script src="js/smooth-scroll.js"></script>  
       <script>
       smoothScroll.init();
-      </script>
-      <script src='js/scrollReveal.js'></script>
-      <script>
-
-      window.scrollReveal = new scrollReveal();
-
       </script>
       <!-- END JAVASCRIPTS -->
 

@@ -7,18 +7,7 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
   <link href="css/bootstrap.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" href="css/styles.css">
-  <script>
-    $(document).ready (function () {
- $(window).scroll (function () {
-    var sT = $(this).scrollTop();
-        if (sT >= 300) {
-            $('.overlay').addClass('cambio')
-        }else {
-            $('.overlay').removeClass('cambio')
-        }
-  })
-})
-  </script>
+
 </head>
 <body>
   <nav data-scroll-header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -50,7 +39,7 @@
   <div class="details">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-7">
           <h2>Meet the Firms Week</h2>
           <div class="page-skills"><p>Branding, Visuals, HTML, CSS</p></div>
           <p>National Meet the Firms Week is the accounting industry's largest online career fair. My vision for the event was a psuedo-political theme to reinforce the national scope and collegiate nature of the event. Bold typography and clear calls-to-action help make this event a success brnging in 13,000 student participants in its first year.</p>
@@ -63,11 +52,13 @@
  <div class="work">
    <div class="container">
      <div class="row">
-       <img src="img/mtf-logo.jpg" class="img-responsive">
+       <div class="col-md-12">
+         <img src="img/mtf-logo.jpg" class="img-responsive">
         <img src="img/mtf-poster.jpg" class="img-responsive">
         <img src="img/mtf-home.jpg" class="img-responsive">
         <img src="img/mtf-emp.jpg" class="img-responsive">
         <img src="img/mtf-webinars.jpg" class="img-responsive">
+       </div>
      </div>
    </div>
  </div>
@@ -104,12 +95,6 @@
       <script src="js/smooth-scroll.js"></script>  
       <script>
       smoothScroll.init();
-      </script>
-      <script src='js/scrollReveal.js'></script>
-      <script>
-
-      window.scrollReveal = new scrollReveal();
-
       </script>
       <!-- END JAVASCRIPTS -->
 
