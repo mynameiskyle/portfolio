@@ -2,26 +2,51 @@
 <html>
 <head>
   <title>Kyle Schmitz | Product & Visual Designer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <link href="css/bootstrap.css" rel="stylesheet">  
-  <link href="css/base.css" rel="stylesheet">
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
+  <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    $(document).ready (function () {
+ $(window).scroll (function () {
+    var sT = $(this).scrollTop();
+        if (sT >= 300) {
+            $('.overlay').addClass('cambio')
+        }else {
+            $('.overlay').removeClass('cambio')
+        }
+  })
+})
+  </script>
 </head>
 <body>
-  <div class="container">
-    <div class="row header">
-      <div class="col-lg-2 pull-left"><a href="index.html"><img src="img/script-logo.png"></a></div>
-      <div class="col-lg-10">
-        <div class="nav pull-right">
-          <ul>
-            <a data-scroll href="#projects"><li>Projects</li></a>
-            <a data-scroll href="#creative-market"><li>Products</li></a>
-            <a data-scroll href="#blog"><li>Stories</li></a>
-            <a data-scroll href="#footer"><li>Contact</li></a>
-          </ul>
-        </div>
+  <nav data-scroll-header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KYLE SCHMITZ</a>
       </div>
-    </div>
-  </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling --> 
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a data-scroll href="#work">Work</a></li>
+          <li><a href="https://creativemarket.com/theflatfoundry" target="_blank">Shop</a></li>
+          <li><a href="https://medium.com/@kyleschmitz/recommended" target="_blank">Read</a></li>
+          <li><a href="bio.html">Bio/Contact</a></li>
+          <!-- <li><a data-scroll href="#hire">Hire Me</a></li> -->
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
   <div class="details">
     <div class="container">
       <div class="row">
@@ -29,15 +54,14 @@
           <h2>Jurispect</h2>
           <div class="page-skills"><p>Branding, Visuals, UI, UX</p></div>
           <p>Jurispect allows legal teams to manage their legal risk.</p>
-          <div class="visit"><a href="https://collegefrog.com">Visit the Site</a></div>
         </div>
       </div>
     </div>
   </div>
 
-  <div id="page">
-    <div class="page-images">                  
-      <div class="container">
+  <div class="work">
+    <div class="container">
+      <div class="row">
         <img src="img/logo-jurispect.png" class="img-responsive">
         <img src="img/jurispect-home.jpg" class="img-responsive">
         <img src="img/jurispect-dash.jpg" class="img-responsive">
@@ -45,183 +69,48 @@
       </div>
     </div>
   </div>
-  <div class="container" id="projects">
-  <div class="row project-row">
-    <div class="col-lg-12">
-      <div class="slide-title"><h4>Projects</h4></div>
-    </div>
-  </div>    
+  <div class="container-fluid galleries" id="work">
+    <div class="row">
+      <div class="col-md-4 col-sm-6 gallery gallery-one"><a href="collegefrog.html"><div class="content"><div class="gallery-title">COLLEGEFROG<h6>UI, UX, Product</h6></div></div></a></div>
+
+      <div class="col-md-4 col-sm-6 gallery gallery-two"><a class='current' href="jurispect.html"><div class="content"><div class="gallery-title">JURISPECT<h6>UI, UX, Product</h6></div></div></a></div>
+
+      <div class="col-md-4 col-sm-6 gallery gallery-three"><a href="accountingfly.html"><div class="content"><div class="gallery-title">ACCOUNTINGFLY<h6>UI, UX, Product</h6></div></div></a></div>
 
 
- <div class="row">
-    <div class="col-lg-3 col-sm-6 col-xs-6">
-      <div class="project-thumb float-shadow">
-        <a href="logos.html"><img src="img/logos-thumb.png" class="img-responsive" alt=""></a>
-        <div class="project-thumb-title">
-          <a href="logos.html"><h4>Logos</h4></a>
-          <span>My logos and icons</span>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-sm-6 col-xs-6">
-      <div class="project-thumb float-shadow">
-        <a href="collegefrog.html"><img src="img/collegefrog-thumb.png" class="img-responsive" alt=""></a>
-        <div class="project-thumb-title">
-          <h4><a href="collegefrog.html">CollegeFrog</a></h4>
-          <span>Brand | Web | UI | UX</span>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-sm-6 col-xs-6">
-      <div class="project-thumb float-shadow">
-        <a href="accountingfly.html"><img src="img/af-thumb.png" class="img-responsive" alt=""></a>
-        <div class="project-thumb-title">
-          <a href="accountingfly.html"><h4>Accountingfly</h4></a>
-          <span>Web Design, UI, UX</span>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-sm-6 col-xs-6">
-      <div class="project-thumb float-shadow">
-        <a href="meetthefirmsweek.html"><img src="img/mtf-thumb.png" class="img-responsive" alt="">
-                <div class="project-thumb-title">
-                  <h4>Meet the Firms Week</h4></a>
-          <span>Brand, Web, HTML, CSS</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ##########################ROW #2############################### -->
-  <div class="row">    
-    <div class="col-lg-3 col-sm-6 col-xs-6">
-      <div class="project-thumb float-shadow">
-       <a href="aafpensacola.html"> <img src="img/aaf-thumb.png" class="img-responsive" alt="">
-               <div class="project-thumb-title">
-                 <h4>AAF Pensacola</h4></a>
-          <span>Web, UX</span>
-        </div>
-      </div>
-    </div>
-    <!-- <div class="col-lg-3 col-sm-6 col-xs-6">
-      <div class="project-thumb float-shadow">
-        <img src="img/mooody-thumb.png" class="img-responsive" alt="">
-                <div class="project-thumb-title">
-                  <h4>mooody</h4>
-          <span>Product, Web, Owner</span>
-        </div>
-      </div>
-    </div> -->
-    <div class="col-lg-3 col-sm-6 col-xs-6">
-      <div class="project-thumb float-shadow">
-        <a class='current' href="jurispect.html"><img src="img/jurispect-thumb.png" class="img-responsive" alt=""></a>
-        <div class="project-thumb-title">
-          <a class='current' href="jurispect.html"><h4>Jurispect</h4></a>
-          <span>Brand, Web, UI, UX</span>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-sm-6 col-xs-6">
-      <div class="project-thumb float-shadow">
-        <a href="revera.html"><img src="img/revera-thumb.png" class="img-responsive" alt="">
-                <div class="project-thumb-title">
-                  <h4>ReVera</h4></a>
-          <span>Brand, Web, UI, UX</span>
-        </div>
-      </div>
-    </div>
-    
-  </div>
+      <div class="col-md-4 col-sm-6 gallery gallery-four"><a href="revera.html"><div class="content"><div class="gallery-title">Revera<h6>UI, UX, Product</h6></div></div></a></div>
+      <div class="col-md-4 col-sm-6 gallery gallery-five"><a href="meetthefirmsweek.html"><div class="content"><div class="gallery-title">MTF WEEK<h6>UI, UX, Product</h6></div></div></a></div>
+      <div class="col-md-4 col-sm-6 gallery gallery-six"><a href="logos.html"><div class="content"><div class="gallery-title">Logos<h6>Collection of logos & icons</h6></div></div></a></div>
 
-    </div>
+      <div class="col-md-4 col-sm-6 gallery gallery-seven"><a href="aafpensacola.html"><div class="content"><div class="gallery-title">AAF<h6>UI, UX, Product</h6></div></div></a></div>
 
-  <div class="container"><hr></div>
+      <div class="col-md-4 col-sm-6 gallery gallery-eight"><a href="dealerexit.html"><div class="content"><div class="gallery-title">Dealerexit<h6>Brand, Web</h6></div></div></a></div>
 
-<div id="creative-market">
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="slide-title"><h4>My Products on Creative Market</h4></div>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6">
-      <div class="project-thumb float-shadow">
+      <div class="col-md-2 col-sm-6 gallery gallery-twitter"><a href="https://twitter.com/kyleschmitz"><div class="content"><div class="gallery-title"><i class="fa fa-twitter"></i></div></div></a></div>
 
-      <a href="https://creativemarket.com/mynameiskyle/22971-Flat-iPhone-iPad-Templates">
-          <img src="img/device-thumb.png" class="img-responsive" alt="">
-       </a>
-          <div class="project-thumb-title">
-            <a href="https://creativemarket.com/mynameiskyle/22971-Flat-iPhone-iPad-Templates"><h4>Flat iPhone & iPad Mockups</h4></a>
-            <span class="price pull-right">$3</span>
-          </div>  
-        </div>
-      </div>
+      <div class="col-md-2 col-sm-6 gallery gallery-dribbble"><a href="https://dribbble.com/mynameiskyle"><div class="content"><div class="gallery-title"><i class="fa fa-dribbble"></i></div></div></a></div>
 
+      <!-- <div class="col-md-4 sol-sm-6"><div class="content twitter"><i class="fa fa-twitter"></i></div></div> -->
 
-    <div class="col-lg-6">
-      <div class="project-thumb float-shadow">
-
-      <a href="https://creativemarket.com/mynameiskyle/22971-Flat-iPhone-iPad-Templates">
-          <img src="img/iphone-thumb.jpg" class="img-responsive" alt="">
-       </a>   
-          <div class="project-thumb-title">
-            <a href="https://creativemarket.com/mynameiskyle/22971-Flat-iPhone-iPad-Templates"><h4>Flat iPhone Mockup</h4></a>
-            <span class="price pull-right">$2</span>
-          </div>  
-        </div>
-      </div>
-    </div>
-</div>
-</div>
-
-  <div class="container">
-  <hr>
-  <div class="slide-title" id="blog"><h4>My Stories on Medium</h4></div>
-  <div class="row">
-
-    <div class="col-lg-6">        
-      <div class="medium">
-        <script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-width="100%" data-collapsed="true" href="https://medium.com/p/57c9e7572b3c">Shit I Wish Someone Told Me When I Was in Design School</a>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-width="100%" data-collapsed="true" href="https://medium.com/p/735fafe2adc2">Managing the swings of a startup</a>
-    </div>
-  </div>
-</div>
-
-
-    <div id="footer">
-   <div class="container">
-    <div class="row"> 
-      <div class="col-lg-8 col-lg-offset-2">
-        <h2>I'm currently available for freelance projects. Let's chat.</h2>
-          <a href="mailto:hello@mynameiskyle.com"><h3>hello@mynameiskyle.com</h3></a>
-        <div class="social">
-          <a href="http://dribbble.com/kyleschmitz"><i class="fa fa-dribbble social-icon"></i></a>
-          <a href="https://github.com/mynameiskyle"><i class="fa fa-github social-icon"></i></a>
-          <a href="http://twitter.com/kyleschmitz"><i class="fa fa-twitter social-icon"></i></a>
-          <a href="http://www.linkedin.com/in/kyleschmitz/"><i class="fa fa-linkedin social-icon"></i></a>
-        </div>
-      </div>
-      </div>
     </div>
   </div>
 
-  <a href="#top" id="toTop"><i class="fa fa-arrow-up"></i></a>
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="js/bootstrap.js"></script>
-   <script src="js/smooth-scroll.js"></script>
-   <script src="js/jquery.scrollToTop.min.js"></script>
-   <script>
-   $(function() {
-    $("#toTop").scrollToTop();
-});
-   </script>
-  <script>
-  smoothScroll.init();
-  </script>
-</body>
-</html>
+      <!-- JAVASCRIPTS -->
+      <script src="js/jquery-1.10.1.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script> 
+      <script src="js/smooth-scroll.js"></script>  
+      <script>
+      smoothScroll.init();
+      </script>
+      <script src='js/scrollReveal.js'></script>
+      <script>
+
+      window.scrollReveal = new scrollReveal();
+
+      </script>
+      <!-- END JAVASCRIPTS -->
+
+
+    </body>
+    </html> 

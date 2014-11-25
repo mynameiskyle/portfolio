@@ -1,0 +1,29 @@
+@import url(../../css/font-awesome.min.css);
+@import url(bootstrap-override.css);
+
+
+
+#footer{
+    background: #1F9B48;
+    padding: 0px 0 50px;
+    color: #fff;
+}
+
+#footer .col-md-3{
+    margin-top: 50px;
+}
+
+#footer .form-control{
+    height: 44px;
+}
+
+#footer h5{
+    margin-top: 0px;
+}
+.social{
+    display: inline-block;
+    padding: 10px;
+    background: #15391E;
+    border-radius: 3px;
+    font-size: 16px;
+}

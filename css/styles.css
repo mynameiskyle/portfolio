@@ -1,0 +1,337 @@
+@import url(font-awesome.min.css);
+@import url(nav.css);
+@import url(page.css);
+/*@import url(parallax.css);*/
+
+body{
+  height: 100%;
+  font-family: 'Roboto Slab', serif;
+  color: #494949;
+}
+
+h1, h2, h3, h4, h5, h6{
+  /*font-weight: 700;*/
+}
+
+/* Sets all non-background image to full-width images*/
+.container-fluid .img-responsive{
+  width: 100%;
+}
+
+#work{
+  margin-top: 110px;
+}
+
+/*******************************************************************************/
+/*******************************************************************************/
+/*******************************************************************************/
+/************************************HERO UNITS*********************************/
+/*******************************************************************************/
+/*******************************************************************************/
+/*******************************************************************************/
+/*******************************************************************************/
+
+.hero{
+  background: url(../img/af-home.jpg) top;
+  background-size: cover;
+  height: 75vh;
+  margin-top: -110px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content{
+  /*background-color: rgba(0,0,0,0.3);*/
+  height: 100%;
+  width: 100%;
+}
+
+.hero-intro{
+  text-transform: uppercase;
+  padding-top: 300px;
+  font-weight: 700;
+}
+
+.hero-intro .hero-title{
+  display: inline-block;
+  font-size: 42px;
+  background: rgba(0,0,0,.4);
+  padding: 10px 20px;
+}
+
+.hero-intro h3{
+  display: inline-block;
+  background: rgba(0,0,0,.4);
+  padding: 0px 20px 10px;
+  margin: 0px 0 0;
+}
+
+/*Reduces font width at small screens for long words in the hero title*/
+@media (max-width: 768px){
+  .hero-intro .hero-title{
+  font-size: 40px;
+  line-height: 38px;
+}
+}
+
+/*Reduces font width at extra small screens for long words in the hero title*/
+@media (max-width: 641px){
+  .hero-intro .hero-title{
+  font-size: 32px;
+  line-height: 38px;
+}
+}
+
+.hero-intro h3{
+  font-weight: 400;
+
+}
+
+
+
+/*******************************************************************************/
+/*******************************************************************************/
+/*******************************************************************************/
+/************************************GALLERIES**********************************/
+/*******************************************************************************/
+/*******************************************************************************/
+/*******************************************************************************/
+/*******************************************************************************/
+
+.page-img .col-sm-6, .page-img .col-sm-4, .page-img .col-md-4{
+  padding-left: 0px;
+  padding-right: 0px;
+  overflow: hidden;
+}
+
+
+.galleries{
+
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+}
+
+.galleries a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.galleries h6{
+  margin: 0px;
+}
+
+.galleries .col-sm-6, .galleries .col-sm-8, .galleries .col-md-4 {
+  padding-right: 0px;
+  padding-left: 0px;
+  cursor: pointer;
+}
+
+.gallery{
+  overflow: hidden;
+  /*border-top: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;*/
+
+}
+
+.gallery:hover .content{
+  transform:scale(1.1);
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.gallery, .content{
+  height: 50vh;
+}
+
+.gallery-title{
+  text-transform: uppercase;
+  display: inline-block;
+  position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+.content{
+  background-color: rgba(0,0,0,0.6);
+  transition: background-color 0.5s ease;
+}
+.content:hover{
+  background-color: rgba(0,0,0,0.1);
+}
+.content .gallery-title{
+  color: rgba(255,255,255,1);
+  padding: 10px 20px;
+
+}
+
+.content:hover .gallery-title{
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.4);
+  padding: 10px 20px;
+}
+
+
+.gallery-one{
+  background: url(../img/collegefrog-studentprofile.jpg) top center;
+  background-size: cover;
+}
+
+
+
+.gallery-two{
+  background: url(../img/jurispect-dash.jpg) top center;
+  background-size: cover;
+}
+
+.gallery-three{
+  background: url(../img/accountingfly-home.jpg) top center;
+  background-size: cover;
+}
+
+.gallery-four{
+  background: url(../img/revera-step2.jpg) top center;
+  background-size: cover;
+}
+
+.gallery-five{
+  background: url(../img/mtf-webinars.jpg) top center;
+  background-size: cover;
+}
+
+.gallery-six{
+  background: url(../img/logo-cie.png) top center;
+  background-size: cover;
+}
+
+.gallery-seven{
+  background: url(../img/aaf-home.jpg) top center;
+  background-size: cover;
+}
+
+.gallery-eight{
+  background: url(../img/dealersite.png) top center;
+  background-size: cover;
+}
+
+.gallery-twitter{
+  background: #55acee;
+}
+
+.gallery-twitter .content{
+  background: #55acee;
+}
+
+.gallery-dribbble .content{
+  background: #ea4c89;
+}
+
+/* content sets the size of the block and the overlay color */
+.content{
+  /*background-color:rgba(0,0,0,0.7); */
+/*  width:100%; 
+  height:100%;*/
+  padding: 200px 0;
+  z-index: 1;
+}
+
+/*******************************************************************************/
+/*******************************************************************************/
+/*******************************************************************************/
+/***************************      BIO    ***************************************/
+/*******************************************************************************/
+/*******************************************************************************/
+/*******************************************************************************/
+/*******************************************************************************/
+
+.bio{
+  margin: 200px 0 0;
+}
+
+.bio img{
+  border: 12px solid #fff;
+  box-shadow: 0px 0px 6px rgba(0,0,0,.2);
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.bio, .bio h1, .bio h2, .bio h3, .bio h4, .bio h5{
+  font-weight: 300;
+}
+
+.bio h1{
+  margin-top: 0px;
+}
+
+
+.bio p{
+  line-height: 22px;
+}
+
+
+.bio .btn{
+  margin-top: 20px;
+  margin-right: 20px;
+  border-radius: 0px;
+
+}
+
+.bio .btn .fa-envelope-o, .bio .btn .fa-phone{
+  margin-right: 10px;
+}
+
+.bio .available{
+  color: #97c240;
+}
+
+.bio .fa-twitter{
+  color: #55acee;
+}
+
+.bio .fa-dribbble{
+  color: #ea4c89;
+}
+
+.bio .fa-linkedin{
+  color: #4875B4;
+}
+
+
+/*******************************************************************************/
+/*******************************************************************************/
+/*******************************************************************************/
+/********************************CUSTOM BUTTONS*********************************/
+/*******************************************************************************/
+/*******************************************************************************/
+/*******************************************************************************/
+/*******************************************************************************/
+
+.btn-o{
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+
+  font-size: 18px; 
+}
+
+.btn-o-dark{
+  background: transparent;
+  border: 1px solid #ccc;
+  color: #666;
+
+  font-size: 14px; 
+}
+
+.btn-o-dark:hover{
+  background: transparent;
+  color: #000;
+  border: 1px solid #666;
+}
+
+.btn-fat{
+  padding: 20px 20px;
+}

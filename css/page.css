@@ -1,30 +1,13 @@
 .details {
+  margin-top: 100px;
   padding: 30px 0px 50px 0;
   color: #666; 
   background: #fff;
   background-size: cover; 
 }
 
-.details-revera {
-  padding: 50px 0px 50px 0;
-  color: #fff; 
-  background: url(../img/revera-bg.jpg);
-  background-size: cover;
-}
-
-.details-cf {
-  padding: 50px 0px 50px 0;
-  color: #fff; 
-  background: url(../img/collegefrog-bg.jpg);
-  background-size: cover;
-}
-.details a{
-  color: #ff9800;
-  font-weight: 300;
-}
-
 .details p{
-  font-family: 'latolight';
+ font-weight: 300;
 }
 
 #page{
@@ -32,40 +15,11 @@
   text-align: center;
 }
 
-#page img{
-  margin: 10px auto;
-  /*border: 10px solid #fff;*/
-  /*box-shadow: 0px 0px 3px rgba(0,0,0,.25);  */
-  border-radius: 3px;
-}
-#page .col-lg-6{
-  position: relative;
-min-height: 1px;
-padding-left: 0px;
-padding-right: 0px;
-}
-}
+.work img{
+  margin: 30px auto;
+  padding: 0 0 30px;
+  border-bottom: 1px solid #ccc;
 
-#page a{
-  color: #333;
-}
-
-.page-right{
-  text-align: center;
-}
-
-.page-right img{
-}
-
-.img-border{
-}
-.page-img{
-}
-
-.img-caption{
-  text-align: left;
-  padding-bottom: 10px;
-  color: #ddd;
 }
 
 .page-skills{
@@ -80,62 +34,18 @@ padding-right: 0px;
   margin-top: 25px;
 }
 
-@media (max-width: 1200px){
-  .other-projects{
-  margin-top: 50px;
-}
-} 
-
-.img-slide{
-  background: url(../img/revera-bg.jpg);
-}
-
-/*.img-slide{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.img-slide img{
-}
-
-.transparent-slide{
-  z-index: 10;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(255,152,0,0.8);
-  width: 100%;
-  height: 100%;
-  padding-top: ;
-}
-
-.title-slide{
-  position: relative;
-  top: 30%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  color: #fff;
-  width: 40%;
-  margin: 0 auto;
-  text-align: center;
-}*/
 
 .pull-quote{
   border-left: 2px solid #ff9800;
   font-size: 28px;
   text-align: left; 
-  font-family: 'latolight';
+
   padding-left: 50px;
-  padding-right: 200px;
   margin: 50px 0;
 }
 
 .pull-quote p{
   margin-top: 10px;
   font-size: 18px;
+  font-weight: 300;
 }
