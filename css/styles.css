@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6{
 
 
 .gallery-one{
-  background: url(../img/collegefrog-studentprofile.jpg) top center;
+  background: url(../img/home-cf.jpg) top center;
   background-size: cover;
 }
 
@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .gallery-three{
-  background: url(../img/accountingfly-home.jpg) top center;
+  background: url(../img/home-af.jpg) top center;
   background-size: cover;
 }
 
@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .gallery-five{
-  background: url(../img/mtf-webinars.jpg) top center;
+  background: url(../img/home-mtf.jpg) top center;
   background-size: cover;
 }
 
@@ -209,7 +209,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .gallery-seven{
-  background: url(../img/aaf-home.jpg) top center;
+  background: url(../img/home-aaf.jpg) top center;
   background-size: cover;
 }
 
