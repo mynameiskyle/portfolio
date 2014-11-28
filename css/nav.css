@@ -30,7 +30,7 @@ text-transform: uppercase;
 
 .navbar-inverse .navbar-brand{
 	color: #494949;
-    padding: 40px 15px 45px 45px;
+    padding: 30px 15px 45px 45px;
 }
 .navbar-inverse .navbar-brand:hover{
     color: #333;
@@ -45,8 +45,8 @@ text-transform: uppercase;
 
 @media (min-width: 768px){
     .navbar-nav > li {
-      padding-top: 30px;
-    padding-bottom: 30px;
+      padding-top: 15px;
+    padding-bottom: 15px;
     }
 
     .navbar-nav > li > a {
