@@ -107,9 +107,9 @@ h1, h2, h3, h4, h5, h6{
 
 .galleries{
 
-  font-size: 32px;
+  font-size: 18px;
   color: #fff;
-  text-align: center;
+  text-align: left;
 }
 
 .galleries a{
@@ -134,54 +134,51 @@ h1, h2, h3, h4, h5, h6{
 
 }
 
-.gallery:hover .content{
+/*.gallery:hover .content{
   transform:scale(1.1);
   -webkit-transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-}
+}*/
 
 .gallery, .content{
   height: 50vh;
 }
 
 .gallery-title{
+  background-color: rgba(0,0,0,0.4);
   text-transform: uppercase;
   display: inline-block;
   position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    left: 0%;
+    bottom: 0px;
+    /*-webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
 
 }
 .content{
-  background-color: rgba(0,0,0,0.4);
   transition: background-color 0.5s ease;
 }
-.content:hover{
+/*.content:hover{
   background-color: rgba(0,0,0,0.1);
-}
+}*/
 .content .gallery-title{
   color: rgba(255,255,255,1);
   padding: 10px 20px;
 
 }
 
-.content:hover .gallery-title{
+/*.content:hover .gallery-title{
   color: rgba(255,255,255,1);
   background-color: rgba(0,0,0,0.4);
   padding: 10px 20px;
 }
-
-
+*/
 .gallery-one{
   background: url(../img/home-cf.jpg) top center;
   background-size: cover;
 }
-
-
 
 .gallery-two{
   background: url(../img/jurispect-dash.jpg) top center;
@@ -215,6 +212,11 @@ h1, h2, h3, h4, h5, h6{
 
 .gallery-eight{
   background: url(../img/dealersite.png) top center;
+  background-size: cover;
+}
+
+.gallery-lettering{
+  background: url(../img/lettering-hot.png) top center;
   background-size: cover;
 }
 
@@ -351,5 +353,5 @@ h1, h2, h3, h4, h5, h6{
 
 
 .footer a{
-  color: #494949;l
+  color: #494949;
 }

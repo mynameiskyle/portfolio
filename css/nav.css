@@ -30,7 +30,7 @@ text-transform: uppercase;
 
 .navbar-inverse .navbar-brand{
 	color: #494949;
-    padding: 24px 15px 45px 45px;
+    padding: 24px 15px 45px 0px;
 }
 
 .navbar-inverse .navbar-brand img{
