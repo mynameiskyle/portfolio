@@ -5,8 +5,12 @@
 
 body{
   height: 100%;
-  font-family: 'Montserrat', serif;
+  font-family: 'Montserrat', sans-serif;
   color: #494949;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -29,6 +33,7 @@ h1, h2, h3, h4, h5, h6{
 
 .home{
   height: 50vh;
+  padding-top: 100px;
 }
 
 .home i{
@@ -277,7 +282,7 @@ h1, h2, h3, h4, h5, h6{
 
 .bio p{
   line-height: 22px;
-  padding: 0  50px;
+  padding: 0  60px;
 }
 
 
