@@ -38,7 +38,7 @@ text-transform: uppercase;
 
 .navbar-inverse .navbar-brand{
 	color: #666;
-    padding: 24px 15px 45px 0px;
+    padding: 25px 15px;
 }
 
 .navbar-inverse .navbar-brand img{
@@ -49,9 +49,9 @@ text-transform: uppercase;
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 767px){
     .navbar-brand{
-        padding: 25px 15px 45px 15px;
+        padding: 25px 15px 45px 30px;
     }
 }
 
@@ -92,4 +92,11 @@ background-color: rgba(0,0,0,0.2);
 .navbar-inverse .navbar-nav > li.current a{
   /*background: rgba(0,0,0,.2);*/
     border-bottom: 1px solid;
+}
+
+@media(max-width:767px){
+    .navbar-inverse .navbar-nav > li.current a{
+  /*background: rgba(0,0,0,.2);*/
+    border-bottom: 1px solid transparent;
+}
 }   
