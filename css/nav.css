@@ -29,6 +29,13 @@ text-transform: uppercase;
     border-bottom: 1px solid;
 }
 
+@media(max-width:767px){
+    .navbar-inverse .navbar-nav > li > a:hover {
+    color: #494949;
+    border-bottom: 1px solid transparent;
+}
+}
+
 .navbar-inverse .navbar-brand{
 	color: #666;
     padding: 24px 15px 45px 0px;
@@ -63,6 +70,7 @@ text-transform: uppercase;
 .navbar-collapse {
 padding-right: 0px;
 padding-left: 15px;
+border-top: none;
 }
 
 .navbar-toggle {
